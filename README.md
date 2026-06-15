@@ -60,3 +60,11 @@ index.json は、MDN「JavaScript ガイド」の Markdown を分割し、bge-m3
 「JavaScript ガイド」を元にしています。
 - 出典: https://developer.mozilla.org/ja/docs/Web/JavaScript/Guide
 - ライセンス: CC-BY-SA 2.5 (https://creativecommons.org/licenses/by-sa/2.5/)
+## 評価
+決まった質問群で「検索の正確さ」と「参考に無い質問を断れるか」を自動で測る
+スクリプト（`eval.mjs`）を用意しています。`node eval.mjs` で実行できます。
+
+- 検索の正確さ: 期待する MDN ページが上位に出るか（4 問）
+- ハルシネーション対策: 参考文書に無い質問を「見つかりませんでした」と断れるか（2 問）
+
+直近の結果: **6/6 合格**。
